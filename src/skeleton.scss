@@ -1,0 +1,40 @@
+/** @format */
+
+header {
+  height: 50px;
+  background-color: #1e65ff;
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.container-skeleton {
+  margin-top: 20px;
+  color: white;
+  padding: 0px 50px;
+  display: flex;
+  gap: 10px;
+  height: 90%;
+  .left {
+    width: 60%;
+    height: 100%;
+
+    .articles {
+      margin: 20px 0px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+
+  .right {
+    height: 100%;
+    width: 40%;
+    .profile {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+}

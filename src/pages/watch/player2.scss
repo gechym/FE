@@ -1,0 +1,130 @@
+/** @format */
+
+.modeWatchLearn {
+  padding: 70px 50px;
+  box-sizing: border-box;
+  .boxVideo {
+    display: flex;
+    gap: 20px;
+  }
+}
+
+.currentTime {
+  color: white;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -43px;
+}
+
+.controlsBtn {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 10px;
+  gap: 10px;
+
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    background-color: #d91921;
+    color: white;
+  }
+}
+
+.subListContainer {
+  position: relative;
+  h1 {
+    background-color: #181818;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 10px;
+    display: flex;
+    gap: 10px;
+    height: 35px;
+    button {
+      border: none;
+      width: 100%;
+      flex: 1;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .activeMode {
+      background-color: #d91921;
+      color: white;
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+  height: 80vh;
+  width: 60%;
+  border: white;
+  background-color: white;
+  overflow-x: scroll;
+  ul {
+    padding: 0px;
+    li {
+      cursor: pointer;
+      border-bottom: 1px solid #ccc;
+      list-style: none;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      &:hover {
+        background-color: #0c0f16;
+        color: white;
+      }
+    }
+
+    .active {
+      background-color: #181818;
+      color: white;
+    }
+  }
+}
+
+.plyr {
+  max-width: 100%;
+  height: 80vh !important;
+}
+
+.plyr__video-wrapper {
+  width: 100% !important;
+  height: 100vh !important;
+}
+
+.plyr--full-ui input[type="range"] {
+  color: #e50914 !important;
+}
+
+.plyr__control--overlaid {
+  background: rgba(229, 9, 20, 0.8) !important;
+}
+
+.plyr--video .plyr__control.plyr__tab-focus,
+.plyr--video .plyr__control:hover,
+.plyr--video .plyr__control[aria-expanded="true"] {
+  background: #e50914 !important;
+}
+
+.plyr__control.plyr__tab-focus {
+  box-shadow: 0 0 0 5px rgba(229, 9, 20, 0.8) !important;
+}
+
+.plyr__menu__container
+  .plyr__control[role="menuitemradio"][aria-checked="true"]::before {
+  background: #e50914 !important;
+}

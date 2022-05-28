@@ -1,0 +1,58 @@
+/** @format */
+:root {
+  //! khai báo các biến cố định sử dụng trong toàn bộ trang
+  --main-color: #181818;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #181818;
+  // -webkit-border-radius: 10px;
+  // border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #6d6d6d;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+.App {
+  background-color: var(--main-color);
+  box-sizing: border-box;
+  min-height: 100vh;
+  position: relative;
+
+  .loadingComponent {
+    position: fixed;
+    left: 50vw;
+    top: 50vh;
+    transform: translate(-50%, -50%);
+    // background-color: rgba(31, 31, 31, 0.165);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .back-icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+    z-index: 10;
+    display: flex;
+    cursor: pointer;
+  }
+}

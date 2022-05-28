@@ -1,0 +1,71 @@
+/** @format */
+
+@import "./swiper-vars.scss";
+
+:root {
+  --swiper-navigation-size: 10px;
+  /*
+  --swiper-navigation-color: var(--swiper-theme-color);
+  */
+}
+.swiper-button-prev,
+.swiper-button-next {
+  // background-color: rgba(150, 144, 144, 0.672);
+  position: absolute;
+  top: 5%;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  //   width: calc(var(--swiper-navigation-size) / 44 * 27);
+  //   height: var(--swiper-navigation-size);
+  margin-top: calc(-1 * var(--swiper-navigation-size) / 2);
+  transform: translate(0, -30%);
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #d91921;
+  &.swiper-button-disabled {
+    opacity: 0.35;
+    cursor: auto;
+    pointer-events: none;
+  }
+  &:after {
+    font-family: swiper-icons;
+    font-size: 18px;
+    font-weight: 900;
+    text-transform: none !important;
+    letter-spacing: 0;
+    text-transform: none;
+    font-variant: initial;
+    line-height: 1;
+  }
+}
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
+  &:after {
+    content: "prev";
+  }
+  right: 50px;
+}
+.swiper-button-next,
+.swiper-container-rtl .swiper-button-prev {
+  &:after {
+    content: "next";
+  }
+  right: 10px;
+  left: auto;
+}
+
+@each $navColorName, $navColorValue in $colors {
+  .swiper-button-prev,
+  .swiper-button-next {
+    &.swiper-button-#{$navColorName} {
+      --swiper-navigation-color: #{$navColorValue};
+    }
+  }
+}
+.swiper-button-lock {
+  display: none;
+}

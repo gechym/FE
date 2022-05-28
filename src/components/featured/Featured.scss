@@ -1,0 +1,86 @@
+/** @format */
+.featured {
+  height: 100vh;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+
+  .category {
+    position: absolute;
+    top: 80px;
+    left: 50px;
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+    display: flex;
+    align-items: center;
+
+    select {
+      border-radius: 4px;
+      cursor: pointer;
+      background-color: var(--main-color);
+      border: 2px solid white;
+      color: white;
+      margin-left: 20px;
+      padding: 5px;
+    }
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    object-fit: cover;
+  }
+
+  .info {
+    background-image: linear-gradient(
+      to top,
+      rgba(24, 24, 24, 0.926) 10%,
+      rgba(255, 255, 255, 0.01)
+    );
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    top: 0px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+
+    .desc {
+      overflow: hidden;
+      width: 400px;
+      height: 200px;
+      margin: 15% 0px 0px 50px;
+      font-size: 18px;
+      font-weight: 500;
+    }
+    .buttons {
+      margin: 20px 70px;
+      display: flex;
+      gap: 10px;
+      button {
+        cursor: pointer;
+        padding: 5px 30px;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        &.play {
+          background-color: #d91921;
+          color: white;
+          &:hover {
+            color: white;
+          }
+        }
+        &.more {
+          background-color: #d91921;
+          color: white;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+/** @format */
+
+.wrapperVideo {
+  position: relative;
+  width: 80vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.plyr {
+  max-width: 100% !important;
+  height: 100vh !important;
+}
+
+.plyr__video-wrapper {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.plyr--full-ui input[type="range"] {
+  color: #e50914 !important;
+}
+
+.plyr__control--overlaid {
+  background: rgba(229, 9, 20, 0.8) !important;
+}
+
+.plyr--video .plyr__control.plyr__tab-focus,
+.plyr--video .plyr__control:hover,
+.plyr--video .plyr__control[aria-expanded="true"] {
+  background: #e50914 !important;
+}
+
+.plyr__control.plyr__tab-focus {
+  box-shadow: 0 0 0 5px rgba(229, 9, 20, 0.8) !important;
+}
+
+.plyr__menu__container
+  .plyr__control[role="menuitemradio"][aria-checked="true"]::before {
+  background: #e50914 !important;
+}

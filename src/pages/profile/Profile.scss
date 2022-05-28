@@ -1,0 +1,69 @@
+/** @format */
+
+.profileUser {
+  color: white;
+  padding-left: 240px;
+  .me {
+    gap: 20px;
+    padding: 0px 40px;
+    padding-top: 100px;
+    display: flex;
+    align-self: center;
+
+    .infoProfile {
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+
+      span {
+        color: #9e9e9e;
+      }
+
+      h4 {
+        color: white;
+        padding: 5px 10px;
+      }
+    }
+
+    .editProfile {
+      padding: 50px;
+
+      .input {
+        margin: 20px;
+        display: flex;
+        align-items: center;
+
+        input {
+          border: none;
+          outline: none;
+          padding: 5px 10px;
+        }
+      }
+
+      button {
+        outline: none;
+        border: none;
+        background-color: red;
+        padding: 10px 5px;
+        border-radius: 8px;
+        color: white;
+        font-size: 15px;
+        font-weight: 700;
+        cursor: pointer;
+        float: right;
+      }
+    }
+
+    .avt {
+      margin-top: 50px;
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .activate {
+      border: 3px solid red;
+    }
+  }
+}

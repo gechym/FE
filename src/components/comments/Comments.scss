@@ -1,0 +1,59 @@
+/** @format */
+.comments {
+  width: 100%;
+  color: white;
+  box-sizing: border-box;
+  padding: 80px;
+  .commentForm {
+    span {
+      cursor: pointer;
+    }
+    .isVote {
+      color: yellow;
+    }
+
+    width: 70%;
+    textarea {
+      margin: 10px 0px;
+      outline: none;
+      padding: 5px;
+      font-size: 16px;
+    }
+    .rating {
+      padding: 0px 20px;
+      button {
+        float: right;
+        border: none;
+        padding: 5px 10px;
+        background-color: #d91921;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      margin-bottom: 20px;
+    }
+  }
+  .commentItem {
+    h4 {
+      span {
+        color: #d91921;
+      }
+    }
+    margin-left: 20px;
+    width: 70%;
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+    img {
+      width: 50px;
+      height: 50px;
+    }
+    span {
+      color: #ffff00;
+    }
+    p {
+      padding: 6px;
+      text-align: justify;
+    }
+  }
+}
